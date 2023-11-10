@@ -3,6 +3,7 @@ body {
     background-color: #f8f0e3;
     color: #333;
     line-height: 1.6;
+    font-size: 1rem;
 }
 
 header {
@@ -24,8 +25,19 @@ header {
     text-align: center;
     border: 1px solid #ddd;
     box-shadow: 0 0 10px rgba(0,0,0,0.1);
-    padding: 15px;
+    padding: 1em;
+    font-size: 1em;
     line-height: 1.5;
+    display: block; /* Sets the image as a block element */
+    margin-left: auto;
+    margin-right: auto;
+    height: auto; 
+}
+
+.image-container {
+    display: flex;
+    justify-content: center; /* Horizontally centers the content */
+    align-items: center; /* Vertically centers the content (if needed) */
 }
 
 footer {
@@ -39,14 +51,26 @@ footer {
 img {
     border: 3px solid #556270;
     box-shadow: 2px 2px 5px rgba(0,0,0,0.3);
+    display: block; /* Sets the image as a block element */
+    margin-left: auto;
+    margin-right: auto;
+    height: auto; /* Preserves the aspect ratio */
 }
 
 @media screen and (max-width: 768px) {
     body {
         padding: 0 10px;
     }
+    img {
+        max-width: 100%; /* Allows the image to adjust to the screen size */
+    }
 
     .tho {
         width: 90%;
     }
+}
+h1, h2, h3, h4, h5, h6 {
+    line-height: 1.2;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
 }
